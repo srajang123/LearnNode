@@ -1,0 +1,10 @@
+<div class="login">
+    <form action="/new-pass" method="post">
+        <input type="password" name="password" placeholder="New Password" class="text">
+        <br/>
+        <input type="hidden" name="user" value="{{{user}}}">
+        <input type="hidden" name="token" value="{{{token}}}">
+        <input type="hidden" name="_csrf" value="{{{csrfToken}}}">
+        <input type="submit" value="CHANGE PASSWORD" class="button">
+    </form>
+</div>

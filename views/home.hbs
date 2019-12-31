@@ -1,0 +1,21 @@
+<main>
+    <div class="grid">
+        {{#each rows}}
+            <div class="flash">
+                <div class="name">{{this.name}}</div>
+                <div class="image">
+                    {{#if this.male}}
+                        <img src="../images/Male.jpg" id="img">
+                    {{else}}    
+                        <img src="../images/Female.jpg" id="img">
+                    {{/if}}
+                </div>
+                <div class="details">
+                    <div class="age"><b id="head">Age:</b>{{this.age}}</div>
+                    <div class="mail"><b id="head">E-Mail:</b>{{this.mail}}</div>
+                </div>
+                    <a href="/student/{{{this.id}}}" class="button">Details</a>
+            </div>
+        {{/each}}
+    </div>
+</main>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>{{pageHead}}</title>
+        <link rel="stylesheet" href="../styles/basic.css">
+        {{#if mainPage}}
+            <link rel="stylesheet" href="../../styles/main.css">
+        {{/if}}
+        {{#if adminPage}}
+            <link rel="stylesheet" href="../../styles/main.css">
+        {{/if}}
+        {{#if addPage}}
+            <link rel="stylesheet" href="../../styles/addnew.css">
+        {{/if}}
+        {{#if loginPage}}
+            <link rel="stylesheet" href="../../styles/addnew.css">
+        {{/if}}
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li class="main-nav-item"><a href="/" class="{{#if mainPage}}active{{/if}}" id="main-nav-a">Home</a></li>
+                    <li class="main-nav-item"><a href="/add-student" class="{{#if addPage}}active{{/if}}" id="main-nav-a">Add Student</a></li>
+                    {{#if isLogin}}
+                    <li class="main-nav-item"><a href="/admin" class="{{#if adminPage}}active{{/if}}" id="main-nav-a">Admin</a></li>
+                    <li class="main-nav-item"><form action="/logout" method="post"><input type="hidden" value="{{{csrfToken}}}" name="_csrf"><input type="submit" class="" id="main-nav-a" value="Logout"></li></form></li>
+                    {{else}}
+                    <li class="main-nav-item"><a href="/login" class="{{#if loginPage}}active{{/if}}" id="main-nav-a">Login</a></li>
+                    <li class="main-nav-item"><a href="/signup" class="{{#if loginPage}}active{{/if}}" id="main-nav-a">Signup</a></li>
+                    {{/if}}
+                </ul>
+            </nav>
+        </header>
+        {{{body}}}
+    </body>
+
+</html>

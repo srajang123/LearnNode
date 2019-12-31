@@ -1,0 +1,13 @@
+<main>
+    <div class="form-data">
+        {{{csrfToken}}}
+        <form action="/add-student" method="POST">
+        <label>Name: </label><input type="text" class="text" name="name"/><br/>
+        <label>Age: </label><input type="text" class="text" name="age"/><br/>
+        <label>E-mail: </label><input type="text" class="text" name="mail"/><br/>
+        <label>Gender: </label><input type="radio" name="gender" value="0">Male &nbsp; <input type="radio" name="gender" value="1">Female<br/>
+        <input type="hidden" value="{{{csrfToken}}}" name="_csrf">
+        <input type="submit" value="ADD" class="button">
+        </form>
+    </div>
+</main>

@@ -1,0 +1,11 @@
+<div class="login">
+    <form action="/login" method="post">
+        <input type="text" name="email" placeholder="Username" class="text">
+        <br/>
+        <input type="password" name="password" placeholder="Password" class="text">
+        <br/>
+        <input type="hidden" name="_csrf" value="{{{csrfToken}}}">
+        <input type="submit" value="LOGIN" class="button">
+        <a href="/reset" class="button">FORGOT PASSWORD</a>
+    </form>
+</div>

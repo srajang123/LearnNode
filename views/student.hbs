@@ -1,0 +1,21 @@
+<main>
+    <div class="grid">
+            <div class="flash">
+                <div class="name">{{send.name}}</div>
+                <div class="image">
+                    {{#if send.male}}
+                        <img src="../images/Male.jpg" id="img">
+                    {{else}}    
+                        <img src="../images/Female.jpg" id="img">
+                    {{/if}}
+                </div>
+                <div class="details">
+                    <div class="age"><b id="head">Age:</b>{{send.age}}</div>
+                    <div class="mail"><b id="head">E-Mail:</b>{{send.mail}}</div>
+                </div>
+                <div class="edit">
+                    <!--<div class=""><a href=""></a></div>-->
+                </div>
+            </div>
+    </div>
+</main>

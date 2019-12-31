@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+a.button{
+    text-decoration-line: none;
+    text-align: center;
+    display:block;
+    border-style:solid;
+    width: 40%;
+    height: 6%;
+}
+.button
+{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 120%;
+    border-width: 1px;
+    border-color: #00f;
+    background-color: #fff;
+    color: #00f;
+    border-radius: 2px;
+}
+.button:hover
+{
+    background-color: #00f;
+    border-radius: 5px;
+    color: #fff;
+}
+body
+{
+    background-color: #F2E307;
+}
+.main-nav
+{
+    background-color: #E05C5C;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    top :0;
+    width: 100%;
+    border-style:solid;
+    border-width:0;
+    border-bottom-width: 2px;
+    border-color: #0ff;
+}
+.main-nav-item
+{
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    padding-right: 5%;
+}
+.main-nav-item a
+{
+    color:#fff;
+    text-decoration: none;
+    font-size: 140%;
+}
+.main-nav-item a.active
+{
+    color: #000;
+}
+main
+{
+    margin-top: 7%;
+    padding-left: 2%;
+}
+h1.error
+{
+    color: #f00;
+    font-size: 250%;
+}
+h2.error
+{
+    color:#a00;
+    font-size: 180%;
+}
+.login{
+    position: relative;
+    top: 5vw;
+}

@@ -1,0 +1,40 @@
+.grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.flash
+{
+    width: 280px;
+    height: 350px;
+    border-style: double;
+    border-width: 2px;
+    margin-top: 2%;
+    box-shadow: 0 0 4px 4px #252525;
+}
+#img
+{
+    width: 250px;
+    height: 250px;
+    margin-left: 6%;
+    padding-bottom: 2%;
+}
+.name
+{
+    text-align: center; 
+    font-size: 150%;
+    font-weight: 700;
+    text-transform: uppercase;  
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.age
+{
+    font-size: 100%;
+}
+.details
+{
+    padding-left: 4%;
+}

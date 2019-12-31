@@ -1,0 +1,10 @@
+<div class="login">
+    <form action="/signup" method="post">
+        <input type="text" name="userid" placeholder="E-mail" class="text">
+        <br/>
+        <input type="password" name="password" placeholder="Password" class="text">
+        <br/>
+        <input type="hidden" value="{{{csrfToken}}}" name="_csrf">
+        <input type="submit" value="SIGN UP" class="button">
+    </form>
+</div>
