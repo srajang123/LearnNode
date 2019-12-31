@@ -12,7 +12,6 @@ const bcrypt = require('bcryptjs');
 const csrf = require('csurf');
 const crypto = require('crypto');
 const { check, validationResult, body } = require('express-validator');
-console.log(check);
 const csrfProt = csrf();
 //const mysql2=require('mysql2');
 const store = new MySQLSession({}, db);
